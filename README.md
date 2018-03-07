@@ -29,5 +29,8 @@ server {
 }
 
 
-5. Ievietot testa lapas failus /var/www/html/testa_lapa  mapē. 
-6. Piekļūt lapai caur http://localhost/testa_lapa/
+5. Ievietot testa lapas failus /var/www/html/test  mapē. 
+6. connection.php failā ir nepieciešams noradīt mysql lietotāja vārdu un paroli lai piekļūtu tai
+7. Piekļūt lapai caur http://localhost/test
+
+
