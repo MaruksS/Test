@@ -1,0 +1,127 @@
+ /* Select font-family  */
+*{
+	font-family: serif;
+	font-size: 20px;
+}
+
+ /* Height and font size for used tags */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+h1{
+	font-size: 30px;
+}
+
+
+ /* Background color */
+.background{
+	background: linear-gradient(135deg, rgba(247,251,252,0.2) 1%,
+										rgba(210,230,239,0.69) 80%,
+										rgba(210,230,239,0.75) 90%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%; 
+}
+
+/* Main body container */
+.container{
+	width: 90%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	padding-top: 30px;
+	max-height: 600px;
+	text-align: center;
+	float: middle;
+}
+
+ /* Input button */
+.button{
+    width: 100%;
+    background-color: #ff9966;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ /* Form input field */
+.input_form .input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+ /* Answer display div */
+.answers{
+	margin-right: 20px;
+}
+
+ /* Hide radio controls */
+input[type="radio"]{
+	display: none;
+}
+
+ /* Radio button Label style */
+.answers input[type="radio"] + label{
+	display: inline-block;
+	margin: 10px 0 0 10px;
+    display: inline-block;
+    border: 1px solid gray;
+    background-color: #f9f9f9;
+    border-radius: 4px;	width: calc(100% * (1/2) - 10px - 2px);
+	box-shadow: 3px 2px 2px grey;
+	cursor: pointer;
+}
+
+ /* Label style when checked */
+.answers input[type="radio"]:checked + label {
+  background-color: #2784d1;
+  color: white;
+}
+
+ /*Label style while hover */
+.answers input[type="radio"]:hover + label{
+	box-shadow: 0 0 6px #2784d1;
+}
+
+ /* Progress Bar style */
+progress {
+	width: 100%;
+	max-width: 400px;
+	height: 14px;
+	margin: 50px auto;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+
+ /* Progress Bar background style */
+progress::-webkit-progress-bar {
+	background: white;
+	border-radius: 50px;
+	border: 1px solid gray;
+    background-color: #f9f9f9;
+	padding: 2px;
+}
+
+ /* Progress Bar value style */
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background: #2784d1;
+}
+
+ /* Change position of answers when display size is changed */
+@media (max-width:800px) {
+  .answers input[type="radio"] + label {
+    width:100%;
+}
