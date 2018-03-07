@@ -29,4 +29,5 @@ server {
 }
 
 
-5. Ievietot testa lapas failus /var/www/html  mapē. 
+5. Ievietot testa lapas failus /var/www/html/testa_lapa  mapē. 
+6. Piekļūt lapai caur http://localhost/testa_lapa/
