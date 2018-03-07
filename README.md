@@ -9,6 +9,7 @@ Vides sagatavošanas soļi:
 Atverot failu ir jāpievieno index.php server sadaļā. 
 Ka arī noņemt komentāru no daļas, kas apstrāda php pieprasījumus. Beigās šīm failam jāizskatās tā:
 
+
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
@@ -26,5 +27,6 @@ server {
 		deny all;
 	}
 }
+
 
 5. Ievietot testa lapas failus /var/www/html  mapē. 
